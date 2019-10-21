@@ -1,1 +1,1 @@
-Link: feelineking-comeback.github.io/js_tree-from-object-DOM/index.html
+Link: https://feelineking-comeback.github.io/js_tree-from-object/
