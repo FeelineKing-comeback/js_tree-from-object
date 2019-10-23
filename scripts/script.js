@@ -34,5 +34,3 @@ function takeHtmlData(object) {
 }
 
 container.append(takeHtmlData(data));
-
-
