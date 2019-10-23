@@ -19,14 +19,13 @@ let data = {
 const container = document.querySelector('#tree');
 
 function takeHtmlData(object) {
-  let ul = document.createElement('ul');
-  let li;
+  const ul = document.createElement('ul');
 
   for (let key in object) {
-    li = document.createElement('li');
+    const li = document.createElement('li');
     li.textContent = key;
-    if (typeof object[key] === 'object' && object[key] !== null) {
-      li.append(takeHtmlData(object[key]))
+    if (typeof object[key] === 'object' && object[key] !== null && Object.keys(object[key]).length > 0) {
+      li.append(takeHtmlData(object[key]));
     }
     ul.append(li);
   }
